@@ -36,5 +36,5 @@ jobs:
         with:
           commit_message: Auto commit by Github Actions, ${{ env.DATE }}
           create_branch: true
-          branch: glitch
+          branch: goorm
           push_options: --force
