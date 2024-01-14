@@ -19,10 +19,6 @@
 ### 6.下载项目文件到本地,并上传下图3个文件到项目目录
 <img width="289" alt="image" src="https://github.com/nap0o/nezha/assets/144927971/3ee759e4-b055-4942-8af2-d5cbd92d219e">
 
-<img width="311" alt="image" src="https://github.com/nap0o/nezha/assets/144927971/6a7993f1-6f09-4795-b7d6-82416fbc7702">
-
-<img width="720" alt="image" src="https://github.com/nap0o/nezha/assets/144927971/60fb4414-0268-48e7-a9fc-c37fde359c80">
-
 <img width="342" alt="image" src="https://github.com/nap0o/nezha/assets/144927971/bb69a7b8-8849-42b7-b2c9-d4a35e0e27f4">
 
 ### 5.点击下方工具栏,切换到TERMIANL
