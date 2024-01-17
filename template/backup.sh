@@ -92,10 +92,12 @@ if [[ "${DASHBOARD_UPDATE}${CLOUDFLARED_UPDATE}${IS_BACKUP}${FORCE_UPDATE}" =~ t
       if [ "$IS_DOCKER" = 1 ]; then
         supervisorctl stop nezha >/dev/null 2>&1
         mv -f /tmp/dist/dashboard-linux-$ARCH $WORK_DIR/app
+        chmod +x $WORK_DIR/app
         supervisorctl start nezha >/dev/null 2>&1
       else
         cmd_systemctl disable >/dev/null 2>&1
         mv -f /tmp/dist/dashboard-linux-$ARCH $WORK_DIR/app
+        chmod +x $WORK_DIR/app
         cmd_systemctl enable >/dev/null 2>&1
       fi
     fi
@@ -119,10 +121,12 @@ if [[ "${DASHBOARD_UPDATE}${CLOUDFLARED_UPDATE}${IS_BACKUP}${FORCE_UPDATE}" =~ t
       if [ "$IS_DOCKER" = 1 ]; then
         supervisorctl stop argo >/dev/null 2>&1
         mv -f /tmp/cloudflared $WORK_DIR/
+        chmod +x $WORK_DIR/cloudflared
         supervisorctl start argo >/dev/null 2>&1
       else
         cmd_systemctl disable >/dev/null 2>&1
         mv -f /tmp/cloudflared $WORK_DIR/
+        chmod +x $WORK_DIR/cloudflared
         cmd_systemctl enable >/dev/null 2>&1
       fi
     fi
